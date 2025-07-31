@@ -1,0 +1,100 @@
+name: kiwi
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  #State Management
+  flutter_bloc: ^9.1.1
+  provider: ^6.1.5
+
+  #Network
+  dio: ^5.8.0+1
+  connectivity_plus: ^6.1.4
+
+  #Dependecy Injection
+  get_it: ^8.1.0
+
+  #UI and Styling
+  google_fonts: ^6.2.1
+  flutter_svg: ^2.2.0
+  animations: ^2.0.11
+  lottie: ^3.3.1
+  shimmer: ^3.0.0
+  badges: ^3.1.2
+
+  #User Authentication
+  local_auth: ^2.3.0
+
+  #Utility
+  equatable: ^2.0.7
+  url_launcher: ^6.3.2
+  url_launcher_ios: ^6.3.3
+
+  #Image Handling
+  image_picker: ^1.1.2
+  cached_network_image: ^3.4.1
+
+  #Localization
+  easy_localization: ^3.0.8
+  intl: ^0.20.2
+
+  #Notifications
+  flutter_local_notifications: ^19.4.0
+  #Firebase Integration
+  firebase_messaging: ^16.0.0
+  firebase_core: ^4.0.0
+
+
+  #Other
+  rxdart: ^0.28.0
+  dartz: ^0.10.1
+  lazy_load_indexed_stack: ^1.2.1
+  shared_preferences: ^2.5.3
+  flutter_slidable: ^4.0.0
+  responsive_framework: ^1.5.1
+  screenshot: ^3.0.0
+  share_plus: ^11.0.0
+  infinite_scroll_pagination: ^4.0.0
+  path_provider: ^2.1.5
+  animated_text_kit: ^4.2.3
+  animated_custom_dropdown: ^3.1.1
+  device_info_plus: ^11.5.0
+  package_info_plus: ^8.3.0
+  change_app_package_name: ^1.5.0
+  retry: ^3.1.2
+  flutter_html: ^3.0.0
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_launcher_icons: ^0.14.4
+  flutter_lints: ^5.0.0
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/images/logo.png"
+  remove_alpha_ios: true
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/images/
+    - assets/icons/
+    - assets/translations/
