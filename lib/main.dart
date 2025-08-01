@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:kiwi/app/cubit/app_cubit.dart';
 import 'package:kiwi/app/view/app.dart';
 import 'package:kiwi/app/view/delegate.dart';
@@ -8,12 +10,22 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
+import 'package:shake_flutter/shake_flutter.dart';
 
 import 'presentation/ui/main/provider/main_provider.dart';
 
 void main() async {
   await Injector.register();
   WidgetsFlutterBinding.ensureInitialized();
+
+
+  Shake.setInvokeShakeOnShakeDeviceEvent(true);
+  Shake.setShowFloatingReportButton(true);
+  Shake.start(Platform.isIOS ? 'SHAKE_API_KEY_IOS' : "SHAKE_API_KEY_ANDROID");
+
+
+  WidgetsFlutterBinding.ensureInitialized();
+  Shake.start('');
 
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,

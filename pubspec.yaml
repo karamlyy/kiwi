@@ -73,6 +73,8 @@ dependencies:
   retry: ^3.1.2
   flutter_html: ^3.0.0
   cupertino_icons: ^1.0.8
+  shake_flutter: ^17.1.1
+
 
 dev_dependencies:
   flutter_test:
